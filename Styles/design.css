@@ -1,0 +1,428 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "El";
+  src: url(/fonts/ELMESSIRI-REGULAR.TTF);
+}
+
+body {
+  font-family: "El", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 1380px;
+  position: relative;
+}
+
+section {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* 
+------------------------------------------------------------------------------ */
+
+.divsInHeader {
+  text-align: center;
+  color: black;
+  font-weight: 800;
+  background-color: #ffdd00;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-size: 18px;
+  box-shadow: 2px 0px 8px rgba(34, 33, 33, 0.5);
+  text-decoration: none;
+}
+
+.divsInHeader:hover {
+  transition-duration: 200ms;
+  text-decoration: underline;
+  background-color: rgba(153, 205, 50, 0.822);
+}
+
+header {
+  background-color: #dc431c;
+  padding: 20px 20px;
+}
+
+.div1Header {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div2Header {
+  width: 40%;
+}
+
+.div1Header h1 {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+/* 
+------------------------------------------------------------------------------ */
+
+.section2Links {
+  padding: 10px 0;
+}
+.section2Links a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+.section2Links a:first-child {
+  color: rgba(153, 205, 50, 0.822);
+}
+span {
+  margin: 0 20px 0 10px;
+  color: rgba(153, 205, 50, 0.822);
+}
+.section2Links a:hover {
+  transition-duration: 200ms;
+  color: rgba(155, 201, 62, 0.822);
+}
+.section2Links .div2Icons {
+  width: 75px;
+}
+.section2Links .div2Icons img {
+  width: 22px;
+  height: 22px;
+  margin-left: 12px;
+}
+
+/* 
+------------------------------------------------------------------------------ */
+
+.section3Imeg {
+  overflow: hidden;
+  background: url(/images/borger.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20%;
+}
+
+.section3Imeg h1 {
+  font-weight: 600;
+  font-size: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+.section3Imeg #txtDiff::before,
+#txtDiff::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 20px;
+}
+#txtDiff::before {
+  top: 0;
+  left: 0;
+}
+
+#txtDiff::after {
+  bottom: 0;
+  right: 0;
+}
+
+/* 
+------------------------------------------------------------------------------ */
+
+.absluteDiv {
+  position: absolute;
+  max-width: 1380px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  bottom: calc(100% - 72rem);
+  left: calc(50% - (1380px * 0.375) - 15px);
+  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: 2px 8px 8px rgba(221, 217, 210, 0.699);
+}
+.absluteDiv h5 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #8f0808;
+  margin-bottom: 4%;
+}
+.DIVabsluteDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.DIVabsluteDiv p {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 1.5rem;
+}
+.DIVabsluteDiv img {
+  width: 150px;
+  height: 150px;
+}
+
+/* 
+------------------------------------------------------------------------------ */
+
+.ulChoices {
+  margin: 20% auto 0%;
+}
+.ulChoices ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 8%;
+  padding-right: 1%;
+}
+.ulChoices ul li {
+  list-style: none;
+  background-color: #d4d4d4;
+  width: 200px;
+  border-radius: 8px 8px 0 0;
+  transition-duration: 200ms;
+}
+.ulChoices ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+.ulChoices ul li:hover {
+  background-color: #b8b6b6;
+}
+.ulChoices ul li a img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5%;
+}
+
+/* 
+------------------------------------------------------------------------------ */
+
+.section4Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 2%;
+  row-gap: 15%;
+  margin-bottom: 12%;
+  padding-left: 1%;
+}
+.food {
+  text-align: center;
+  height: 300px;
+}
+
+.food img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+.food a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  transition-duration: 200ms;
+}
+.food a:hover {
+  color: gray;
+}
+
+/* -----------------------------------------------------------------------------Log in Page */
+
+.Login {
+  width: 100%;
+}
+.Login #bgImg {
+  overflow: hidden;
+  background: url(/images/loginImg.jpg);
+  background-size: cover;
+  height: 50vh;
+  background-position: left center;
+  position: relative;
+  z-index: 10;
+}
+
+.Login::before {
+  content: "";
+  transform: rotate(180deg);
+  background: url(/images/loginImg.jpg) no-repeat;
+  background-size: cover;
+  background-position: unset;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(57% - 50px);
+  left: calc(12em - 50px);
+  clip-path: polygon(50.5% 0, 0% 100%, 100% 100%);
+  z-index: 5;
+}
+
+.formLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2% auto;
+}
+.formLogin input {
+  width: 50%;
+  padding: 10px 20px 10px 50px;
+  margin-top: 4%;
+  border: none;
+  border-bottom: 3px solid #6d6d6d;
+  text-align: left;
+}
+.formLogin input:focus {
+  outline: none;
+}
+.formLogin input[type="text"] {
+  background-image: url("/images/user.png");
+  font-size: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-right: 30px;
+}
+
+.formLogin input[type="password"] {
+  background-image: url("/images/Lock.png");
+  font-size: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-right: 30px;
+}
+
+.formLogin a {
+  background-color: #fea920;
+  padding: 20px 200px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 4%;
+  border-radius: 10px;
+}
+.formLogin a:hover {
+  background-color: #eea633;
+  transition-duration: 200ms;
+}
+
+.iconsScoial {
+  width: 25%;
+  margin: 4% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconsScoial a img {
+  width: 80px;
+}
+
+/* -----------------------------------------------------------------------------Concate Page */
+
+.concatPage {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1380px;
+}
+.bgConcat {
+  overflow: hidden;
+  background: url(/images/cocat.png) no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+
+.concatPage h1 {
+  color: black;
+  font-size: 50px;
+  margin-top: 2%;
+}
+
+.concatPage ul {
+  margin: 5% auto;
+  list-style: none;
+  background-color: #9000ff65;
+  border-radius: 30px;
+  padding: 50px 30px;
+  width: 33%;
+}
+.concatPage ul li {
+  text-align: left;
+  margin-top: 10%;
+}
+.concatPage ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition-duration: 200ms;
+}
+.concatPage ul li a:hover {
+  color: rgba(44, 43, 43, 0.767);
+  text-decoration: underline;
+}
+.concatPage ul li a p {
+  width: 66%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.concatPage ul li a p:hover {
+  text-decoration: underline;
+}
+.concatPage ul li a img {
+  margin-right: 8%;
+}
+
+.rounds {
+}
+.rounds p {
+  position: absolute;
+  top: 70rem;
+  left: 50%;
+  width: 50em;
+  height: 50em;
+  border-radius: 50%;
+  background-color: #fea920;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.rounds .round1,
+.rounds .round2 {
+  z-index: 5;
+  background-color: #fea9208a;
+}
+.rounds .round1 {
+  left: -14rem;
+}
+.rounds .round2 {
+  right: -15rem;
+}
+.rounds .round3 {
+  right: 23%;
+}
